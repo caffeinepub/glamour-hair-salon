@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+
+    /* Warm cream page background: #F3EADB */
+    --background: 0.936 0.028 75;
+    /* Deep brown/charcoal text: #2B241E */
+    --foreground: 0.22 0.022 50;
+
+    /* Card ivory: #FFF9EF */
+    --card: 0.978 0.018 82;
+    --card-foreground: 0.22 0.022 50;
+
+    --popover: 0.978 0.018 82;
+    --popover-foreground: 0.22 0.022 50;
+
+    /* Gold accent: #B7923A */
+    --primary: 0.61 0.1 75;
+    --primary-foreground: 0.978 0.018 82;
+
+    /* Beige secondary */
+    --secondary: 0.91 0.024 78;
+    --secondary-foreground: 0.22 0.022 50;
+
+    --muted: 0.91 0.024 78;
+    --muted-foreground: 0.52 0.02 60;
+
+    --accent: 0.91 0.024 78;
+    --accent-foreground: 0.22 0.022 50;
+
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.978 0.018 82;
+
+    /* Warm-gray border: #D8CBB6 */
+    --border: 0.845 0.03 75;
+    --input: 0.845 0.03 75;
+    --ring: 0.61 0.1 75;
+
+    --chart-1: 0.646 0.222 41.116;
+    --chart-2: 0.6 0.118 184.704;
+    --chart-3: 0.398 0.07 227.392;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+
+    --sidebar: 0.91 0.024 78;
+    --sidebar-foreground: 0.22 0.022 50;
+    --sidebar-primary: 0.61 0.1 75;
+    --sidebar-primary-foreground: 0.978 0.018 82;
+    --sidebar-accent: 0.936 0.028 75;
+    --sidebar-accent-foreground: 0.22 0.022 50;
+    --sidebar-border: 0.845 0.03 75;
+    --sidebar-ring: 0.61 0.1 75;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Inter", system-ui, sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Playfair Display", Georgia, serif;
+  }
+}
